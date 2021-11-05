@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<style align=center>
+table, th, td {
+  border:1px solid blue;
+  border-collapse: collapse;
+  text-align: center;
+}
+ 
+</style>
+<body >
+
+<h2 align=center>Horario 1º ASIR 2021/2022 </h2>
+
+<table style="width:100%">
+  <tr>
+    <td></td>
+    <th colspan="8">Horario</th>
+  </tr>
+  <tr>
+  	<th>Horas</th>
+    <th>Lunes</th>
+    <th>Martes</th>
+    <th>Miércoles</th>
+    <th>Jueves</th>
+    <th>Viernes</th>
+    <th>Sábado</th>
+    <th>Domingo</th>
+  </tr>
+  
+  <tr align=center>
+  	<th>8:15 - 9:15</th>
+    <td rowspan="2">LLMM</td>
+    <td rowspan="2">PLAR</td>
+    <td rowspan="2">ISO</td>
+    <td rowspan="2">LLMM</td>
+    <td rowspan="2">BBDD</td>
+    <td colspan="2" rowspan="7">DESCANSO</td>
+  </tr>
+  <tr>
+  	<th>9:15 - 10:15</th>
+
+  </tr>
+   <tr align=center>
+    <th>10:15 - 11:15</th>
+    <td>BBDD</td>
+    <td>ISO</td>
+    <td>BBDD</td>
+    <td>ISO</td>
+    <td>PLAR</td>
+  </tr>
+   <tr align=center>
+    <th >11:15 - 11:45</th>
+    <td colspan="5">RECREO</td>
+  </tr>
+    <tr>
+    <th>11:45 - 12:45</th>
+    <td>BBDD</td>
+    <td rowspan="2">ISO</td>
+    <td>BBDD</td>
+    <td rowspan="2">ISO</td>
+    <td>PLAR</td>
+  </tr>
+  <tr>
+    <th>12:45 - 13:45</th>
+    <td rowspan="2">PLAR</td>
+    <td rowspan="2">FOL</td>
+    <td>ISO</td>
+
+  </tr>
+  <tr>
+    <th>13:45 - 14:45</th>
+    <td>HARDWARE</td>
+    <td>HARDWARE</td>
+    <td>FOL</td>
+
+  </tr>
+</table>
+
+</body>
+</html>
+
