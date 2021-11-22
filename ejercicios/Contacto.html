@@ -9,7 +9,7 @@
         </style>
 <head>
     <meta charset="UTF-8">
-    <title>Contacto</title>
+    <title>Datos de Contacto</title>
 </head>
 <body>
     <table>
@@ -19,24 +19,30 @@
         <tr>
           <td>
             <form>
-              <label for="fname">First name:</label><br>
+              <label for="fname">Nombre:</label><br>
               <input type="text" id="fname" name="fname" value="John"><br>
-              <label for="lname">Last name:</label><br>
+              <label for="lname">Apellidos:</label><br>
               <input type="text" id="lname" name="lname" value="Doe"><br><br>
-              <input type="submit" value="Submit">
+              <input type="submit" value="Submit"><br><br>
 
-              <label for="Ciudades">Ciudad:</label><br>
+              <label for="Ciudades">Elige tu ciudad de destino</label><br><br>
               <select id="Ciudades" name="Ciudades">
                 <option value="Cualquier ciudad">Cualquier ciudad</option>
+                <option value="Huelva">Huelva</option>
+                <option value="Cádiz">Cádiz</option>
+                <option value="Málaga">Málaga</option>
+                <option value="Granada">Granada</option>
+                <option value="Almeria">Almeria</option>
                 <option value="Sevilla">Sevilla</option>
                 <option value="Córdoba">Córdoba</option>
-                <option value="Málaga">Málaga</option>
+                <option value="Jaén">Jaén</option>
                 <option value="Madrid">Madrid</option>
                 <option value="Barcelona">Barcelona</option>
                 <option value="Valencia">Valencia</option>
-                <option value="Cádiz">Cádiz</option>
-              </select><br>
+                
+              </select><br><br>
           <textarea></textarea><br>
+          <aside>
             <input type="radio" id="Desayuno" name="fav_language" value="Desayuno">
             <label for="Desayuno">Desayuno</label><br>
             <input type="radio" id="Media Pensión" name="fav_language" value="Media Pensión">
@@ -45,7 +51,7 @@
             <label for="Pensión Completa">Pensión Completa</label><br>
             <input type="radio" id="Todo Incluido" name="fav_language" value="Todo Incluido">
             <label for="Todo Incluido">Todo Incluido</label><br>
-
+          </aside>
             <input type="submit">
             <input type="reset">
           </form>
