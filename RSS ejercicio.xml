@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!-- Edited by XMLSpy® -->
 <rss version="2.0">
 
 <channel>
@@ -8,7 +7,7 @@
   <description>Canal de información del alumno</description>
   <item>
     <title>Primera noticia</title>
-    <link>www.fútbol.com</link>
+    <link>htpps://www.fútbol.com</link>
     <description>información de fútbol</description>
   </item>
   <item>
