@@ -2,38 +2,61 @@
 <html>
    <head>
       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1"><
       <title>Ejercicios LLMM</title> <!-- Aquí va la información del head de tu página web, tales como enlaces, escripts, o los meta -->
       <style>
          body{
-            text-align: center;
             background-color: cadetblue;
          }
-         footer {
-            background-color: #777;
+         h1{
             text-align: center;
+         }
+         table, th, td {
+            border:1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+         }
+         
+         footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(170, 170, 170);
             color: white;
-            padding: 10;
-            max-width: 100%;
-
-            }
+            text-align: center;
+         }  
    
       </style>
    </head>
    <body> <!-- Aquí va el contenido de tu página web -->
-        <h1>Ejercicios LLMM</h1> 
-        <p>Este va a ser mi primer ejercicio en HTML, que tenemos que hacer nuestro horario de clase</p>
-     <a href="ejercicios/horario.html">Horario</a><br> <br>
-        <p>En el segundo ejercicio de clase vamos a hacer la receta de una tortilla</p>
-     <a href="ejercicios/tablita.html">Tortilla</a><br>
-        <p>En el tercer ejercicio de la clase vamos a hacer un tour</p>
-     <a href="ejercicios/InicioTour.html">InicioTour1</a>
-        <p>En el cuarto ejercicio de la clase vamos a hacer un segundo tour</p>
-     <a href="ejercicios/Tour2.html">Tour2</a><br>
-        <p>En el quinto ejercicio de la clase vamos a hacer un contacto</p>
-     <a href="ejercicios/Contacto.html">Contacto</a><br>
-        <p>En el sexto ejercicio de la clase vamos a hacer un rss</p>
-     <a href="rss-ejercicio.xml">RSS</a><br><br><br><br><br><br><br><br>
-
+      <h1>Ejercicios LLMM</h1>
+      <table align="center">
+            <tr> 
+               <td><p>Este va a ser mi primer ejercicio en HTML, que tenemos que hacer nuestro horario de clase</p></td>
+               <td><a href="ejercicios/horario.html">Horario</a><br> <br></td>
+            </tr>
+            <tr>
+               <td><p>En el segundo ejercicio de clase vamos a hacer la receta de una tortilla</p></td>
+               <td><a href="ejercicios/tablita.html">Tortilla</a></td>
+            </tr>
+            <tr>   
+               <td><p>En el tercer ejercicio de la clase vamos a hacer un tour</p></td>
+               <td><a href="ejercicios/InicioTour.html">InicioTour1</a></td>
+            </tr>
+            <tr>   
+               <td><p>En el cuarto ejercicio de la clase vamos a hacer un segundo tour</p></td>
+               <td><a href="ejercicios/Tour2.html">Tour2</a></td>
+            </tr>
+            <tr>   
+               <td><p>En el quinto ejercicio de la clase vamos a hacer un contacto</p></td>
+               <td><a href="ejercicios/Contacto.html">Contacto</a></td>
+            </tr>
+            <tr>   
+               <td><p>En el sexto ejercicio de la clase vamos a hacer un rss</p></td>
+               <td><a href="rss-ejercicio.xml">RSS</a></td>
+            </tr>   
+         </table>
    <footer>
          <p>Footer</p>
    </footer>
