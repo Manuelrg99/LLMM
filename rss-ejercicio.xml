@@ -14,5 +14,10 @@
     <link>https://www.tenis.com</link>
     <description>Información de tenis</description>
   </item>
+  <item>
+    <title>Tercera noticia</title>
+    <link>https://www.eltiempo.es/?gclid=Cj0KCQiAweaNBhDEARIsAJ5hwbcX5uFRiGURG6gdbyydhDQ_N6KP8m1SMv_zvjlZ3CZI4Oem-E8N550aAg3EEALw_wcB</link>
+    <description>El tiempo</description>
+  </item>
 </channel>
 </rss>
