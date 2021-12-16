@@ -24,9 +24,7 @@
     <link>https://www.elmundo.es/espana/2021/12/15/61ba34a8fdddffe8998b4570.html<link>
     <description>El mundo</description>
     <language>es</language>
-    <image>
-    <url>https://phantom-elmundo.unidadeditorial.es/b337bfea325db31babaac9504b4f1445/crop/34x12/1200x789/resize/990/f/webp/assets/multimedia/imagenes/2021/12/15/16395978818119.jpg</url>
-    </image>
+    <imagen>ejercicios/img/rey-españa.jpg</imagen>
   </item>
 </channel>
 </rss>
