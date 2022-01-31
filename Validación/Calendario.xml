@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Calendario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Calendario.xsd">
+    <trimestre numero="1">
+        <asignatura nombre="LLMM">
+            <tema id="4">
+                <nombre>RSS</nombre>
+                <nota_media>
+                    <teoria>8.5</teoria>
+                    <teoria>7</teoria>
+                    <practica>9.5</practica>
+                    <practica>8</practica>
+                </nota_media>
+            </tema>
+            <fecha_Examenes>20-10-2021</fecha_Examenes>
+        </asignatura>
+    </trimestre>
+
+
+
+
+
+
+
+
+</Calendario>
