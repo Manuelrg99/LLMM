@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="consolas">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="consola">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="plataforma" type="xs:string"/>
+            <xs:element name="version" type="xs:integer"/>
+            <xs:element name="juegos">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="accion">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="rol">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="arcade">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="fecha_lanzamiento" type="xs:date"/>
+            <xs:element name="exito">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ventas">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="numero" type="xs:integer"/>
+                        <xs:element name="mes" type="xs:string"/>
+                        <xs:element name="anno" type="xs:integer"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="plataforma" type="xs:string"/>
+            <xs:element name="version" type="xs:integer"/>
+            <xs:element name="juegos">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="accion">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="rol">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="arcade">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="fecha_lanzamiento" type="xs:date"/>
+            <xs:element name="exito">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ventas">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="numero" type="xs:integer"/>
+                        <xs:element name="mes" type="xs:string"/>
+                        <xs:element name="anno" type="xs:integer"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="plataforma" type="xs:string"/>
+            <xs:element name="version" type="xs:integer"/>
+            <xs:element name="juegos">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="accion">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="rol">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="arcade">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="fecha_lanzamiento" type="xs:string"/>
+            <xs:element name="exito">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ventas">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="numero" type="xs:integer"/>
+                        <xs:element name="mes" type="xs:string"/>
+                        <xs:element name="anno" type="xs:integer"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+</xs:schema>

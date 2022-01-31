@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<consolas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="consola.xsd">
+    <consola>
+        <plataforma>PS</plataforma>
+            <version>4</version>
+                <juegos>
+                    <accion>
+                        <nombre>Juego 1</nombre>
+                        <nombre>Juego 1</nombre>
+                        <nombre>Juego 1</nombre>
+                    </accion>
+                    <rol>
+                        <nombre>Juego 1</nombre>
+                        <nombre>Juego 1</nombre>
+                        <nombre>Juego 1</nombre>
+                    </rol>
+                    <arcade>
+                        <nombre>Juego 1</nombre>
+                        <nombre>Juego 1</nombre>
+                        <nombre>Juego 1</nombre>
+                    </arcade>
+                </juegos>
+                <fecha_lanzamiento>2020-10-10</fecha_lanzamiento>
+                <exito>
+                    <ventas>
+                        <numero>300</numero>
+                        <mes>Enero</mes>
+                        <anno>2022</anno>
+                    </ventas>
+                </exito>
+        <plataforma>PS</plataforma>
+            <version>5</version>
+                <juegos>
+                    <accion>
+                        <nombre>Juego 1</nombre>
+                        <nombre>Juego 1</nombre>
+                        <nombre>Juego 1</nombre>
+                    </accion>
+                    <rol>
+                        <nombre>Juego 1</nombre>
+                        <nombre>Juego 1</nombre>
+                        <nombre>Juego 1</nombre>
+                    </rol>
+                    <arcade>
+                        <nombre>Juego 1</nombre>
+                        <nombre>Juego 1</nombre>
+                        <nombre>Juego 1</nombre>
+                    </arcade>
+                </juegos>
+                <fecha_lanzamiento>2021-10-10</fecha_lanzamiento>
+                    <exito>
+                        <ventas>
+                            <numero>600</numero>
+                            <mes>Enero</mes>
+                            <anno>2022</anno>
+                        </ventas>
+                    </exito>
+        <plataforma>XBOX</plataforma>
+            <version>2021</version>
+                <juegos>
+                    <accion>
+                        <nombre>Juego 1</nombre>
+                        <nombre>Juego 1</nombre>
+                        <nombre>Juego 1</nombre>
+                    </accion>
+                    <rol>
+                        <nombre>Juego 1</nombre>
+                        <nombre>Juego 1</nombre>
+                        <nombre>Juego 1</nombre>
+                    </rol>
+                    <arcade>
+                        <nombre>Juego 1</nombre>
+                        <nombre>Juego 1</nombre>
+                        <nombre>Juego 1</nombre>
+                    </arcade>
+                </juegos>
+                <fecha_lanzamiento>2019-10-10</fecha_lanzamiento>
+                <exito>
+                    <ventas>
+                        <numero>1000</numero>
+                        <mes>Enero</mes>
+                        <anno>2022</anno>
+                    </ventas>
+                </exito>
+    </consola>
+</consolas>
