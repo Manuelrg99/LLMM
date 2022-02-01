@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <Calendario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="Calendario.xsd">
-    <trimestre numero="1">
-        <asignatura nombre="LLMM">
-            <tema id="4">
+    <trimestre atributo="primero">
+        <asignatura nombre="LLMM" min="1" max="6">
+            <tema id="4" min="1" max="10">
                 <nombre>RSS</nombre>
                 <nota_media>
                     <teoria>8.5</teoria>
