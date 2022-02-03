@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="restricciones">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="persona">
+                    <xs:complexType>
+                        <!-- el XS:all me indica que puedo poner los elementos en el
+                        orden que yo quiera, pero deben aparecer, excepto cuando 
+                    yo especifico el mínimo y el máximo, que solo pueden ser de 0 a 1.-->
+                        <xs:all>
+                            <xs:element name="nombre" type="xs:string" minOccurs="0" />
+                            <xs:element name="apellidos" type="xs:string" />
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="empresa">
+                    <xs:complexType>
+                        <!-- con choice elijo una de las opciones 
+                            que tengo dentro, pero solo una -->
+                        <xs:choice>
+                            <xs:element name="empleado" type="xs:string" />
+                            <xs:element name="miembro" type="xs:string" />
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+
+<!-- Ejemplo de restriccion de valores numéricos -->
+<xs:element name="edadSinrestriccion" type="xs:integer"/>
+
+<xs:element name="edad">
+  <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="18"/>
+      <xs:maxInclusive value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+<!-- ejemplo de creación de un grupo de campos a reutilizar en mi xsd -->
+<xs:element name="alumno">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:group ref="datosPersona"/>
+            <xs:element name="modulo" type="xs:string"/>
+    </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<xs:element name="tutor">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:group ref="datosPersona"/>
+            <xs:element name="telefono" type="xs:string"/>
+    </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+
+<xs:group name="datosPersona">
+  <xs:sequence>
+    <xs:element name="firstname" type="xs:string"/>
+    <xs:element name="lastname" type="xs:string"/>
+    <xs:element name="birthday" type="xs:date"/>
+  </xs:sequence>
+</xs:group>
+
+
+
+
+</xs:schema>

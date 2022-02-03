@@ -1,0 +1,61 @@
+<?xsd version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="Calendario">
+    <xs:complexType>
+        <xs:sequence>
+            
+            <xs:element name="trimestre">
+                <xs:complexType>
+                    <xs:sequence>
+
+
+                        <xs:element name="asignatura" minOccurs="1" maxOccurs="6">
+                            <xs:complexType>
+                                <xs:sequence>
+
+
+                                    <xs:element ref="tema">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="nombre" type="xs:string"/>
+                                                <xs:element name="notamedia" minOccurs="1" maxOccurs="10">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="teoria" type="xs:float"/>
+                                                            <xs:element name="practica" type="xs:float"/>
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:sequence>
+                                        </xs:complexType>
+
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="tema">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+        
+            <xs:element name="notaMedia" type="string"></xs:element>
+        
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string"/>
+    </xs:complexType>
+</xs:element>
+
+
+
+
+
+
+</xs:schema>
