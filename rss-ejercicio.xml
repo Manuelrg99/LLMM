@@ -6,12 +6,12 @@
   <description>Canal de información del alumno</description>
   <item>
     <title>Primera noticia</title>
-    <link>https://www.youtube.com/</link>
-    <description>información de fútbol</description>
+    <link>https://as.com/futbol/?omnil=mpal</link>
+    <description>Información actual de fútbol</description>
   </item>
   <item>
     <title>Segunda noticia</title>
-    <link>https://www.tenis.com</link>
+    <link>https://as.com/tenis/</link>
     <description>Información de tenis</description>
   </item>
   <item>
