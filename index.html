@@ -6,20 +6,30 @@
       <title>Ejercicios LLMM</title> <!-- Aquí va la información del head de tu página web, tales como enlaces, escripts, o los meta -->
       <style>
          body{
-            background-color: rgb(255, 110, 236);
+            background-color: rgb(78, 184, 216);
          }
-         h1{
+         header > h1{
             text-align: center;
             background-color: rgb(170, 170, 170);
+            padding: 20px;
+            font-size: 25px;
          }
-         table, th, td {
-            border:1px solid black;
+         section > table {
+            width: 100%;
+
+         }
+         table, tr, td {
+            border: 1px solid black;
             border-collapse: collapse;
             text-align: center;
             position:static;
-            margin-left: 20%;
+            font-size: 20px;
+            width: 50%;
          }
-         
+         img {
+            width: 100px;
+            height: 100px;
+         }
          footer {
             position: fixed;
             left: 0;
@@ -28,7 +38,7 @@
             background-color: rgb(170, 170, 170);
             color: black;
             text-align: center;
-            padding: 30px;
+            padding: 20px;
             font-size: 25px;
          }
          *{
@@ -38,36 +48,40 @@
       </style>
    </head>
    <body> <!-- Aquí va el contenido de tu página web -->
-      <h1>Ejercicios LLMM</h1>
-      <table>
+      <header>
+         <h1>Ejercicios LLMM</h1>
+      </header>
+      <section>
+         <table>
             <tr> 
-               <td><p>Este va a ser mi primer ejercicio en HTML, que tenemos que hacer nuestro horario de clase</p></td>
+               <td><p>Creación del horario de 1º ASIR del Luis Vélez de Guevara</p></td>
                <td><a href="ejercicios/horario.html">Horario</a><br> <br></td>
             </tr>
             <tr>
-               <td><p>En el segundo ejercicio de clase vamos a hacer la receta de una tortilla</p></td>
+               <td><p>Creación de una receta de tortilla</p></td>
                <td><a href="ejercicios/tablita.html">Tortilla</a></td>
             </tr>
             <tr>   
-               <td><p>En el tercer ejercicio de la clase vamos a hacer un tour</p></td>
+               <td><p>Primer Tour de 1ºASIR</p></td>
                <td><a href="ejercicios/InicioTour.html">InicioTour1</a></td>
             </tr>
             <tr>   
-               <td><p>En el cuarto ejercicio de la clase vamos a hacer un segundo tour</p></td>
+               <td><p>Segundo Tour de 1ºASIR</p></td>
                <td><a href="ejercicios/Tour2.html">Tour2</a></td>
             </tr>
             <tr>   
-               <td><p>En el quinto ejercicio de la clase vamos a hacer un contacto</p></td>
+               <td><p>Creación de un Contacto</p></td>
                <td><a href="ejercicios/Contacto.html">Contacto</a></td>
             </tr>
             <tr>   
-               <td><p>En el sexto ejercicio de la clase vamos a hacer un rss</p></td>
-               <td><a href="validacion/rss-ejercicio.xml">RSS</a></td>
-            </tr>   
+               <td><p>Creación de noticias con RSS</p></td>
+               <td><a href="Validación/rss/rss-ejercicio.xml"> <img src="ejercicios/img/imagen_rss.png"></a></td>
+            </tr>  
          </table>
-   <footer>
-         <h3>Desarrollado por: Manuel Antonio Romero García</h3>
-   </footer>
+      </section>
+      <footer>
+            <h3>Desarrollado por: Manuel Antonio Romero García</h3>
+      </footer>
    </body>
    
 </html>

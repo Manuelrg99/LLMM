@@ -23,7 +23,18 @@
     <title>Monarquía. Juan Carlos I quiere volver para su cumpleaños el 5 de enero y pasar "una temporada" en España</title>
     <link>https://www.elmundo.es/espana/2021/12/15/61ba34a8fdddffe8998b4570.html</link>
     <description>El mundo</description>
-    <imagen>ejercicios/img/rey-españa.jpg</imagen>
+  </item>
+  <item>
+    <title>Así lucen los 21 Grand Slams de Rafa Nadal tras colocar la copa del Open de Australia en su museo</title>
+    <link>https://www.marca.com/tenis/open-australia/2022/02/04/61fd175f46163fa9038b45ff.html</link>
+    <description>Rafa Nadal</description>
+    <category>Deportes</category>
+    <category>Tenis</category>
+    <h2>Las vitrinas del Rafa Nadal Museum ya presumen de una cifra récord</h2>
+  <image>
+      <url>Rafa_Nadal.jpg</url>
+      <Noticia>Con 21 Gran Slams, no será suficiente</Noticia>
+  </image>
   </item>
 </channel>
 </rss>
