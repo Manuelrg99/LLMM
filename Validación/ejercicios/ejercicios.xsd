@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ejercicios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="numero">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:pattern value="[+][0-9]{2}[0-9]{9}"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <xs:element name="password">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="[a-zA-Z0-9]{5}"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <xs:element name="dni">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="[a-zA-Z0-9]{9}"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+          
+        <xs:element name="correo">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:maxLength value="100"/>
+                    <xs:pattern value="[^@]+@[^\.]+\..+|"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:element>
+
+        <xs:element name="coincidencia">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="tontería|maldito|caray|caramba|madre mía|ostras"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <xs:element name="coincidencia1">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="|vi@gra|v1agra|v1@gra|v!@gr@"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+      </xs:sequence> 
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -70,6 +70,17 @@
   </xs:sequence>
 </xs:group>
 
+<xs:element name="coche">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Audi"/>
+      <xs:enumeration value="Golf"/>
+      <xs:enumeration value="BMW"/>
+      <xs:enumeration value="otro"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element> 
+
 
 
 

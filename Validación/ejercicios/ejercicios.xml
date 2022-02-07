@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<ejercicios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="ejercicios.xsd">
+
+<numero>+34677121212</numero>
+<password>Mrg29</password>
+<dni>30101010A</dni>
+<correo>pepe87@gmail.com</correo>
+<coincidencia>maldito</coincidencia>
+<coincidencia1>v1agra</coincidencia1>
+
+
+
+<!-- EJERCICIOS
+1.-patrón para un número de teléfono como el siguiente
++34677121212
+
+
+2.- Patrón para poner un password entre 5 y 8 caracteres con mayusculas, minusculas y números
+
+3.- Patrón para el DNI 30101010A
+
+4.- Patron para coincidencia con cualquier palabra o frase de la lista siguiente:
+tontería
+maldito
+caray
+caramba
+madre mía
+ostras
+
+5.- Patron para coincidencia con la palabra "viagra" y con algunas de las alteraciones que utilizan los emisores de spam, por ejemplo:
+vi@gra
+v1agra
+v1@gra
+v!@gr@
+
+6.- Patrón para correo electrónico
+por ejemplo: pepe87@gmail.com -->
+
+</ejercicios>
