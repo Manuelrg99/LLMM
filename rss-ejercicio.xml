@@ -36,5 +36,17 @@
       <Noticia>Con 21 Gran Slams, no será suficiente</Noticia>
   </image>
   </item>
+  <item>
+    <title>Betis hace historia y gracias a Nabil Fekir marca el primer gol olímpico de la historia en el derbi de Sevilla</title>
+    <link>https://www.colombia.com/futbol/internacional/betis-gol-olimpico-al-sevilla-334671</link>
+    <description>Nabil Fekir</description>
+    <category>Deportes</category>
+    <category>Fútbol</category>
+    <h2>Nabil Fekir hace historia en el Real Betis Balompié</h2>
+  <image>
+      <url>Fekir.jpg</url>
+      <Noticia>En el minuto 39, Fekir sorprendió a todos los espectadores con esta genialidad</Noticia>
+  </image>
+  </item>
 </channel>
 </rss>
