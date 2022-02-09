@@ -24,29 +24,5 @@
     <link>https://www.elmundo.es/espana/2021/12/15/61ba34a8fdddffe8998b4570.html</link>
     <description>El mundo</description>
   </item>
-  <item>
-    <title>Así lucen los 21 Grand Slams de Rafa Nadal tras colocar la copa del Open de Australia en su museo</title>
-    <link>https://www.marca.com/tenis/open-australia/2022/02/04/61fd175f46163fa9038b45ff.html</link>
-    <description>Rafa Nadal</description>
-    <category>Deportes</category>
-    <category>Tenis</category>
-    <h2>Las vitrinas del Rafa Nadal Museum ya presumen de una cifra récord</h2>
-  <image>
-      <url>Rafa_Nadal.jpg</url>
-      <Noticia>Con 21 Gran Slams, no será suficiente</Noticia>
-  </image>
-  </item>
-  <item>
-    <title>Betis hace historia y gracias a Nabil Fekir marca el primer gol olímpico de la historia en el derbi de Sevilla</title>
-    <link>https://www.colombia.com/futbol/internacional/betis-gol-olimpico-al-sevilla-334671</link>
-    <description>Nabil Fekir</description>
-    <category>Deportes</category>
-    <category>Fútbol</category>
-    <h2>Nabil Fekir hace historia en el Real Betis Balompié</h2>
-  <image>
-      <url>Fekir.jpg</url>
-      <Noticia>En el minuto 39, Fekir sorprendió a todos los espectadores con esta genialidad</Noticia>
-  </image>
-  </item>
 </channel>
 </rss>
