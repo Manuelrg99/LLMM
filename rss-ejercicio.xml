@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
 <channel>
   <title>Mi canal RSS Manuel Romero</title>
   <link>https://manuelrg99.github.io/LLMM/</link>
@@ -24,5 +24,14 @@
     <link>https://www.elmundo.es/espana/2021/12/15/61ba34a8fdddffe8998b4570.html</link>
     <description>El mundo</description>
   </item>
+  <item>
+    <title>Así lucen los 21 Grand Slams de Rafa Nadal tras colocar la copa del Open de Australia en su museo</title>
+    <link>https://www.marca.com/tenis/open-australia/2022/02/04/61fd175f46163fa9038b45ff.html</link>
+    <description>Rafa Nadal</description>
+    <h2>Las vitrinas del Rafa Nadal Museum ya presumen de una cifra récord</h2>
+    <media:content url="../ejercicios/img/Rafa_Nadal.jpeg" medium="image" width="449px" height="253px"/>
+    <category>Deportes</category>
+    <category>Tenis</category>
+</item>
 </channel>
 </rss>
