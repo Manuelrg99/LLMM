@@ -5,10 +5,14 @@ xsi:noNamespaceSchemaLocation="ejercicios.xsd">
 
 <numero>+34677121212</numero>
 <password>Mrg29</password>
-<dni>30101010A</dni>
+<dni>30101010-A</dni>
 <correo>pepe87@gmail.com</correo>
 <coincidencia>maldito</coincidencia>
 <coincidencia1>v1agra</coincidencia1>
+<sexo>
+    <femenino>f</femenino>
+    <masculino>Hombre</masculino>
+</sexo>
 
 
 

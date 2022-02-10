@@ -6,7 +6,7 @@
         <xs:element name="numero">
           <xs:simpleType>
             <xs:restriction base="xs:integer">
-              <xs:pattern value="[+][0-9]{2}[0-9]{9}"/>
+              <xs:pattern value="[+][0-9]{11}"/>
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
@@ -14,7 +14,9 @@
         <xs:element name="password">
           <xs:simpleType>
             <xs:restriction base="xs:string">
-              <xs:pattern value="[a-zA-Z0-9]{5}"/>
+              <xs:minLength value="5"/>
+              <xs:maxLength value="8"/>
+              <xs:pattern value="[a-zA-Z0-9]*"/>
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
@@ -22,7 +24,7 @@
         <xs:element name="dni">
           <xs:simpleType>
             <xs:restriction base="xs:string">
-              <xs:pattern value="[a-zA-Z0-9]{9}"/>
+              <xs:pattern value="[0-9]{8}[-][a-zA-Z]"/>
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
@@ -31,7 +33,7 @@
               <xs:simpleType>
                 <xs:restriction base="xs:string">
                     <xs:maxLength value="100"/>
-                    <xs:pattern value="[^@]+@[^\.]+\..+|"/>
+                    <xs:pattern value="[_]*[a-z0-9]{6,50}[@][a-z]{1,10}[.][a-z]{2,6}"/>
                 </xs:restriction>
             </xs:simpleType>
         </xs:element>
@@ -51,7 +53,39 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
+
+        <xs:element name="sexo">
+          <xs:complexType>
+            <xs:sequence>
+            <xs:element name="femenino">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="(f|F|Mujer|M){0,1}"/>
+                </xs:restriction>  
+              </xs:simpleType>
+            </xs:element>
+            <xs:element name="masculino">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="(m|M|Hombre|H){0,1}"/>
+                </xs:restriction>  
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+          <xs:attribute name="id" type="atributoSexo"></xs:attribute>
+          </xs:complexType>
+        </xs:element>
       </xs:sequence> 
     </xs:complexType>
   </xs:element>
+
+  <xs:simpleType name="atributoSexo">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="1"/>
+      <!-- otra opción-->
+      <xs:enumeration value="0|1"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
 </xs:schema>
