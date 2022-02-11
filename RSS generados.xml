@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"  version="2.0">
+    <channel>
+        <title>            Así se aprovechan los narcos de Salvamento Marítimo para conseguir escolta para sus cargamentos de hachís | Andalucía        </title>
+        <description>            Averías inventadas, accidentes que jamás ocurrieron y ataques de orcas que nunca se acercaron. Dependiendo del día, el SOS que lanzaban era diferente, pero el objetivo era el...        </description>
+        <pubDate>Fri, 11 Feb 2022 09:32:37 +0000</pubDate>
+        <link>            https://www.elmundo.es/andalucia/2022/02/10/6204fea221efa07f7b8b45ec.html        </link>
+        <atom:link href="http://fetchrss.com/rss/62042d48029b11244345366262062d35a3e01f2264518963.xml" rel="self" type="application/rss+xml" />
+        <generator>https://fetchrss.com</generator>
+        <image>
+            <link>    https://www.elmundo.es/andalucia/2022/02/10/6204fea221efa07f7b8b45ec.html    </link>
+            <url>    https://www.google.com/s2/favicons?domain=https://www.elmundo.es    </url>
+            <title>    Así se aprovechan los narcos de Salvamento Marítimo para conseguir escolta para sus cargamentos de hachís | Andalucía    </title>
+        </image>
+        <item>
+            <title>    Así se aprovechan los narcos de Salvamento Marítimo para conseguir escolta para sus cargamentos de hachís    </title>
+            <link>https://twitter.com/Chemarrodriguez</link>
+            <description>
+                <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/02/10/16444939459953.jpg" width="608" height="405">
+                    <br>
+                        <br>
+                            <p class="ue-c-article__standfirst">Desmantelada una red que lanzaba SOS por averías ficticias y hasta ataques de orcas inventados para camuflar sus alijos</p>
+                            <br />
+                            <br />
+                            <span style="font-size:12px; color: gray;">
+                                (Feed generated with
+                                <a href="https://fetchrss.com" target="_blank">FetchRSS</a>
+                                )
+                            </span>
+                        </br>
+                    </br>
+                </img>
+            </description>
+            <dc:creator>CHEMA RODRÍGUEZ</dc:creator>
+            <pubDate>Fri, 11 Feb 2022 09:32:37 +0000</pubDate>
+            <media:content url="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/02/10/16444939459953.jpg" medium="image" width="608" height="405" />
+            <guid isPermaLink="false">https://twitter.com/Chemarrodriguez</guid>
+        </item>
+    </channel>
+</rss>
