@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejercicioresumen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejercicioresumen.xsd">
+    <ConjuntosSimples>
+        <!-- Tipos simples sin atributo -->
+        <SinAtributo>Elemento Simple</SinAtributo>
+        <SinAtributoTipoSimple>2020-10-10</SinAtributoTipoSimple>
+        <SinAtributoTipoDefinido>Sevilla</SinAtributoTipoDefinido>
+
+
+        <!-- Repetir lo anterior pero con atributos -->
+        <ConAtributo id="0">Elemento Simple con Atributo</ConAtributo>
+    </ConjuntosSimples>
+    <ConjuntosComplejos>
+        <!-- Elemento complejo con tipos de datos simplpes/base -->
+        <Elemento1>
+            <subElemento1>de tipo cadena</subElemento1>
+            <subElemento2>2</subElemento2>
+        </Elemento1>
+        <!-- Elemento complejo con atributos y tipos de datos simples/base -->
+        <Elemento2>
+            <subElemento1>2</subElemento1>
+            <subElemento2>3</subElemento2>
+        </Elemento2>
+    </ConjuntosComplejos>
+</ejercicioresumen>

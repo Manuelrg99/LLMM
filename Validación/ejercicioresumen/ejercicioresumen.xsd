@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="ejercicioresumen">
+    <xs:complexType>
+        <xs:sequence>
+            <!-- Definimos elementos simples -->
+            <xs:element name="ConjuntosSimples">
+                <xs:complexType>
+                    <!-- Vamos a definir elementos simples -->
+                    <xs:all>
+                        <xs:element name="SinAtributo" type="xs:string"/>
+                        <!-- Tipo simple: integer, string, date, etc -->
+                        <xs:element name="SinAtributoTipoSimple" type="xs:date"/>
+                        <xs:element name="SinAtributoTipoDefinido" type="xs:string"/>
+
+                        <xs:element name="ConAtributo">
+                        
+                        </xs:element>
+                    </xs:all>   
+                   
+                </xs:complexType>
+            </xs:element>
+            <!-- Definimos elementos complejos-->
+            <xs:element name="ConjuntosComplejos">
+                <xs:complexType>
+                    <!-- Vamos a definir elementos complejos -->
+                    <xs:all>
+                        <!-- Sin atributos con tipos base -->
+                        <xs:element name="Elemento1">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="subElemento1" type="xs:string"/>
+                                    <xs:element name="subElemento2" type="xs:integer"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <!-- Elemento complejo con atributo -->
+                        <xs:element name="Elemento2">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="subElemento1" type="xs:string"/>
+                                    <xs:element name="subElemento2" type="xs:integer"/>
+                                </xs:sequence>
+                                <xs:attribute name="id" type="xs:integer"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:all>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<!-- Definición de tipos -->
+    <!-- Tipo "Dirección"-->
+</xs:schema>
