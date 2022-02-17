@@ -48,9 +48,23 @@
                     </xs:all>
                 </xs:complexType>
             </xs:element>
+            <xs:element name="Restricciones">
+                <xs:complexType>
+                    <!-- Vamos a definir elementos complejos -->
+
+                </xs:complexType>
+            </xs:element>
         </xs:sequence>
     </xs:complexType>
 </xs:element>
 <!-- Definición de tipos -->
     <!-- Tipo "Dirección"-->
 </xs:schema>
+<!-- Restricciones -->
+<!-- Expresiones regulares -->
+<!-- 1.- Numérica -->
+<!-- 2.- De cadenas -->
+<!-- 3.- Mixtas -->
+<!-- All/Choice/Sequence -->
+<!-- max-minOccurs -->
+<!-- Grupos de elementos para reutilizar -->
