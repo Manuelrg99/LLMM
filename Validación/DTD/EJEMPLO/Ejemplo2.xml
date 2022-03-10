@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE NEWSPAPER SYSTEM "Ejemplo2.dtd">
+
+<NEWSPAPER NAME="ELMUNDO">
+    <ARTICLE>
+        <HEADLINE></HEADLINE>
+        <BYLINE></BYLINE>
+        <LEAD></LEAD>
+        <BODY></BODY>
+        <NOTES></NOTES>
+    </ARTICLE>
+
+
+</NEWSPAPER>
