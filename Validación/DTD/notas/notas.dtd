@@ -1,0 +1,10 @@
+<!ELEMENT note (to,from,heading,body)>
+    <!ELEMENT to (#PCDATA)>
+    <!ELEMENT from (#PCDATA)>
+    <!ELEMENT heading (#PCDATA)>
+    <!ELEMENT body (mensaje, fecha)> <!-- <!ELEMENT body (#PCDATA)> -->
+        <!ELEMENT mensaje (#PCDATA)>
+        <!ELEMENT fecha (dia, mes, anno)> <!-- <!ELEMENT fecha (#PCDATA)> -->
+            <!ELEMENT dia (#PCDATA)>
+            <!ELEMENT mes (#PCDATA)>
+            <!ELEMENT anno (#PCDATA)>

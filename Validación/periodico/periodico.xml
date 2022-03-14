@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE NEWSPAPER SYSTEM "periodico.dtd">
+
+<NEWSPAPER>
+<ARTICLE AUTHOR="Manuel Romero" EDITOR="Juan Pedro">
+    <HEADLINE>Cabecera 1</HEADLINE>
+    <LEAD>AAAAAA</LEAD>
+    <BODY>BBBBBB</BODY>
+    <NOTES>Notas 1</NOTES>
+</ARTICLE>
+
+<ARTICLE AUTHOR="Manuel Romero" EDITOR="Juan Pedro">
+    <HEADLINE>Cabecera 1</HEADLINE>
+    <LEAD>AAAAAA</LEAD>
+    <BODY>BBBBBB</BODY>
+    <NOTES>&NEWSPAPER;</NOTES>
+</ARTICLE>
+</NEWSPAPER>

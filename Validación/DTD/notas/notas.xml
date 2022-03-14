@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE note SYSTEM "notas.dtd">
+
+<note>
+    <to>Manuel</to>
+    <from>Raúl</from>
+    <heading>Recordatorio</heading>
+    <body>
+        <mensaje>Este es el mensaje</mensaje>
+        <fecha>
+            <dia>3</dia>
+            <mes>Marzo</mes>
+            <anno>2022</anno>
+        </fecha>
+    </body>
+</note>
