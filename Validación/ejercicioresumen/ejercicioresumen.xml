@@ -1,26 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ejercicioresumen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="ejercicioresumen.xsd">
-    <ConjuntosSimples>
-        <!-- Tipos simples sin atributo -->
-        <SinAtributo>Elemento Simple</SinAtributo>
-        <SinAtributoTipoSimple>2020-10-10</SinAtributoTipoSimple>
-        <SinAtributoTipoDefinido>Sevilla</SinAtributoTipoDefinido>
 
+<resumenes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ejercicioresumen.xsd">
+    <!--Definimos elementos-->
+    <simples>
+        <!--Vamos a definir elementos simples-->
+        <SinAtributo>hola</SinAtributo>
+        <!-- Tipo simple= integer, date, string, etc-->
+        <integer>10</integer>
+        <string>adios</string>
+        <date>2022-10-10</date>
+        <!-- Tipo simple= integer, date, string, etc-->
+        <elementoDefinido>tonteria</elementoDefinido>
+    </simples>
 
-        <!-- Repetir lo anterior pero con atributos -->
-        <ConAtributo id="0">Elemento Simple con Atributo</ConAtributo>
-    </ConjuntosSimples>
+    <!--Vamos a definir elementos complejos-->
     <ConjuntosComplejos>
-        <!-- Elemento complejo con tipos de datos simplpes/base -->
-        <Elemento1>
-            <subElemento1>de tipo cadena</subElemento1>
-            <subElemento2>2</subElemento2>
-        </Elemento1>
-        <!-- Elemento complejo con atributos y tipos de datos simples/base -->
-        <Elemento2>
-            <subElemento1>2</subElemento1>
-            <subElemento2>3</subElemento2>
-        </Elemento2>
+        <!--Elemnto complejo sin atributo-->
+        <elemento1>
+            <elemento1.1>uno</elemento1.1>
+            <elemento1.2>dos</elemento1.2>
+        </elemento1>
+        <!--Elemnto complejo con atributo-->
+        <elemento2 id="uno">
+            <elemento2.1>uno</elemento2.1>
+            <elemento2.2>dos</elemento2.2>
+        </elemento2>
+        <!--Elemento complejo sin atributo con tipo definido en el elemento simple (se comporta como un cmplextype pero es reutilizable)-->
+        <elemento3>
+            <elemento1.1>
+                <loclaidad>Ecija</loclaidad>
+                <cp>41400</cp>
+                <ciudad>tonteria</ciudad>
+            </elemento1.1>
+            <elemento1.2>adios</elemento1.2>
+        </elemento3>
+
+        <!--Restricciones-->
+        <!--Expresiones Regulares Numericas-->
+        <!--Patrón para un número de teléfono como el siguiente +34 677 121 212-->
+        <telefono>+34652236310</telefono>
+
+
+        <!--Expresiones Regulares de Cadenas-->
+        <!--Patron para coincidencia con la palabra "viagra" y con algunas de las alteraciones que utilizan 
+            los emisores de spam, por ejemplo: vi@gra v1agra v1@gra v!@gr@ -->
+        <pastilla>viagra</pastilla>
+
+        <!--Expresiones Regulares Mixtas-->
+        <!--Patrón para correo electrónico por ejemplo: pepe87@gmail.com -->
+        <email>juanjoseam1980@gmail.com</email>
+
+        <!--All/Choice /sequence-->
+        <!--Secuence obliga a respetar el orden en el que esta en el xsd-->
+        <tarjetas1>
+            <color1>amarillo</color1>
+            <color2>rojo</color2>
+        </tarjetas1>
+
+        <!--Choice obliga a tener al menos una de las opciones que esta en el xsd-->
+        <tarjetas2>
+            <color1>amarilla</color1>
+        </tarjetas2>
+
+        <!--All obliga a que aparezcan todas las opciones pero en el orden que queramos que esta en el xsd-->
+        <tarjetas3>
+            <color2>rojo</color2>
+            <color1>amarillo</color1>
+        </tarjetas3>
+
+         <!--max-minoccurs en elemento simple -->
+        <tema>1</tema>
+
+        <curso>
+            <puesto>1</puesto>
+            <puesto>2</puesto>
+        </curso>
+
+
+        <!--Grupos de elementos para reutilizar-->
+        <alumno>
+            <nombre>Juan</nombre>
+            <apellidos>Arroyo</apellidos>
+            <direccion>Calle 1</direccion>
+        </alumno>
+
+        <profesor>
+            <nombre>Angela</nombre>
+            <apellidos>Rider</apellidos>
+            <direccion>Calle 2</direccion>
+        </profesor>
     </ConjuntosComplejos>
-</ejercicioresumen>
+</resumenes>

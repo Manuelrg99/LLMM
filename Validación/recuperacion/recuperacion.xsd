@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="aeropuertos">
+        <xs:complexType>
+            <xs:sequence><!-- sequence, porque nos pide que sea en el orden que nos indica el 
+                enunciado y por eso lo colocamos de la siguiente forma los element de dentro de 
+                la secuencia-->
+                    <xs:element name="nombre" type="xs:string"/>
+                    <xs:element name="vuelos">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="vuelo" minOccurs="1" maxOccurs="unbounded">
+                                    <!-- Como el enunciado nos pide como obligatorio un vuelo como 
+                                        mínimo añadimos minOccurs="1" y como puede haber infinitos 
+                                    vuelos, añadimos maxOccurs="unbounded"-->
+                                    <xs:complexType>
+                                        <xs:sequence><!-- sequence, porque nos pide que aparezca en el  
+                                            orden que aparece en el panel que nos indica el enunciado y 
+                                            por eso lo colocamos de la siguiente forma los element de dentro de la 
+                                            secuencia-->
+                                            <xs:element name="diario" minOccurs="0"/> <!-- minOccurs="0" porque se puede no poner la etiqueta diario-->
+                                            <xs:element name="origen" type="Origendefinido"/> <!-- "type" Para definirlo más tarde-->
+                                            <xs:element name="destino" type="Destinodefinido"/> <!-- "type" Para definirlo más tarde-->
+                                            <xs:element name="hora">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element name="hora-salida" type="horadefinida"/> <!-- "type" Para definirlo más tarde-->
+                                                        <xs:element name="hora-embarque" type="Horadefinida"/> <!-- "type" Para definirlo más tarde-->
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="puerta-embarque" type="xs:string"/> <!-- "type" Para definirlo más tarde-->
+                                            <xs:element name="observaciones" type="xs:string"/> <!-- "type" Para definirlo más tarde-->
+                                        </xs:sequence>
+                                        <xs:attribute name="código">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:ID"><!-- xs:ID, para ponerlo como único el código-->
+                                                    <xs:pattern value="[A-Z]{2,3}"/> <!-- Para ponerle la restricción al código-->
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:attribute>
+                                        <xs:attribute name="estado" default="E"> <!-- Para ponerle por defecto "E"-->
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[CER]"/><!-- Para ponerle el valor que puede coger el estado-->
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:attribute>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="fecha-panel" type="xs:date"/>
+                    <xs:element name="nombre" type="xs:string"/>
+                    <xs:element name="vuelos">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="vuelo" minOccurs="1" maxOccurs="unbounded">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="diario" minOccurs="0"/>
+                                            <xs:element name="origen" type="Origendefinido"/>
+                                            <xs:element name="destino" type="Destinodefinido"/>
+                                            <xs:element name="hora">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element name="hora-salida" type="horadefinida"/>
+                                                        <xs:element name="hora-embarque" type="Horadefinida"/>
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="puerta-embarque" type="xs:string"/>
+                                            <xs:element name="observaciones" type="xs:string"/>
+                                        </xs:sequence>
+                                        <xs:attribute name="código">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:ID">
+                                                    <xs:pattern value="[A-Z]{2,3}"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:attribute>
+                                        <xs:attribute name="estado" default="E">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[CER]"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:attribute>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="fecha-panel" type="xs:date"/>
+                    <xs:element name="nombre" type="xs:string"/>
+                    <xs:element name="vuelos">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="vuelo" minOccurs="1" maxOccurs="unbounded">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="diario" minOccurs="0"/>
+                                            <xs:element name="origen" type="Origendefinido"/>
+                                            <xs:element name="destino" type="Destinodefinido"/>
+                                            <xs:element name="hora">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element name="hora-salida" type="horadefinida"/>
+                                                        <xs:element name="hora-embarque" type="Horadefinida"/>
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="puerta-embarque" type="xs:string"/>
+                                            <xs:element name="observaciones" type="xs:string"/>
+                                        </xs:sequence>
+                                        <xs:attribute name="código">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:ID">
+                                                    <xs:pattern value="[A-Z]{2,3}"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:attribute>
+                                        <xs:attribute name="estado" default="E">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[CER]"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:attribute>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="fecha-panel" type="xs:date"/><!-- Para ponerle el tipo al elemento fecha-panel-->    
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+
+    <!-- REFERENCIAS -->
+
+    <xs:simpleType name="Origendefinido">
+        <xs:restriction base="xs:string">
+            <!--<xs:pattern value="([A-Z]{1,3})"/>--><!-- Podríamos añadir este valor para escribir las 3 primeras letras de otra provincia si fuese necesario -->
+            <xs:pattern value="SEV|MAL|MAD"/> <!-- Valores que coge la restricción-->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Destinodefinido">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([A-Z][a-z]{1,20})"/> <!-- Valores que coge la restricción para el destino-->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="horadefinida">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-2][0-9][:][0-5][0-9])*"/> <!-- Valores que coge la restricción para la hora -->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Horadefinida">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-2][0-9][:][0-5][0-9])*"/> <!-- Valores que coge la restricción para la hora -->
+        </xs:restriction>
+    </xs:simpleType>
+
+
+
+</xs:schema>
