@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aeropuertos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="recuperacion.xsd">
+            <nombre>Sevilla</nombre><!-- Nombre del aeropuerto-->
+
+            <vuelos><!-- Etiqueta para agrupar los vuelos de un aeropuerto-->
+
+                <vuelo código="DLH" estado="R"><!-- Etiqueta que agrupa los datos del vuelo y tiene como atributo el codigo del vuelo y el estado del vuelo -->
+                    <diario/><!-- Etiqueta que puede aparecer o no, para indicar si el vuelo es diario o no-->
+                    <origen>SEV</origen> <!-- Origen del vuelo-->
+                    <destino>Munich</destino> <!-- Destino del vuelo-->
+                    <hora><!-- Etiqueta creada para agrupar las horas de salida y embarque-->
+                        <hora-salida>15:45</hora-salida> <!-- Etiqueta para la hora de salida-->
+                        <hora-embarque>15:41</hora-embarque><!-- Etiqueta para la hora de embarque-->
+                    </hora>
+                    <puerta-embarque>D68</puerta-embarque><!-- Etiqueta para la puerta de embarque-->
+                    <observaciones>ESTIMA. 16:11h</observaciones><!-- Etiqueta para las observaciones-->
+                </vuelo>
+
+                <vuelo código="IBE" estado="E">
+                    <diario>SI</diario>
+                    <origen>SEV</origen>
+                    <destino>Barcelona</destino>
+                    <hora>
+                        <hora-salida>15:50</hora-salida>
+                        <hora-embarque>15:40</hora-embarque>
+                    </hora>
+                    <puerta-embarque>D65</puerta-embarque>
+                    <observaciones>EMBARQUE</observaciones>    
+                </vuelo>
+                <vuelo código="IBE" estado="E"> <!-- Esta etiqueta da error porque como tenemos 
+                    que poner el código como único y hay dos códigos repetidos -->
+                    <diario>SI</diario>
+                    <origen>SEV</origen>
+                    <destino>Bilbao</destino>
+                    <hora>
+                        <hora-salida>15:50</hora-salida>
+                        <hora-embarque>15:40</hora-embarque>
+                    </hora>
+                    <puerta-embarque>D44</puerta-embarque>
+                    <observaciones>EMBARQUE</observaciones>    
+                </vuelo>
+                <vuelo código="VLG" estado="R">
+                    <diario>SI</diario>
+                    <origen>SEV</origen>
+                    <destino>Madrid</destino>
+                    <hora>
+                        <hora-salida>15:35</hora-salida>
+                        <hora-embarque>15:25</hora-embarque>
+                    </hora>
+                    <puerta-embarque>B18</puerta-embarque>
+                    <observaciones>IR A PTA</observaciones>    
+                </vuelo>
+            </vuelos>
+            <fecha-panel>2022-08-21</fecha-panel><!-- Fecha del panel, no sé a qué fecha se refiere 
+            el enunciado del trabajo, por lo tanto que puedo una fecha al azar -->
+
+            <nombre>Madrid</nombre>
+            <vuelos>
+                <vuelo código="VLG" estado="E"> <!-- Esta etiqueta da error porque como tenemos 
+                    que poner el código como único y hay dos códigos repetidos -->
+                    <diario/>
+                    <origen>MAD</origen>
+                    <destino>Emiratos</destino>
+                    <hora>
+                        <hora-salida>16:40</hora-salida>
+                        <hora-embarque>16:00</hora-embarque>
+                    </hora>
+                    <puerta-embarque>C33</puerta-embarque>
+                    <observaciones>ENLACE D46 Procedente de Madrid</observaciones>    
+                </vuelo>
+                <vuelo código="AEA" estado="C">
+                    <diario/>
+                    <origen>MAD</origen>
+                    <destino>Malaga</destino>
+                    <hora>
+                        <hora-salida>16:15</hora-salida>
+                        <hora-embarque></hora-embarque>
+                    </hora>
+                    <puerta-embarque>D61</puerta-embarque>
+                    <observaciones>ESTIMA. 16:11h</observaciones>    
+                </vuelo>
+            </vuelos>
+            <fecha-panel>2022-08-21</fecha-panel>
+
+            <nombre>Málaga</nombre>
+            <vuelos>
+                <vuelo código="DB" estado="E">
+                    <diario/>
+                    <origen>MAL</origen>
+                    <destino>Melilla</destino>
+                    <hora>
+                        <hora-salida>15:30</hora-salida>
+                        <hora-embarque>15:25</hora-embarque>
+                    </hora>
+                    <puerta-embarque>B15</puerta-embarque>
+                    <observaciones>EMBARQUE CERRADO</observaciones>    
+                </vuelo>
+            </vuelos>
+            <fecha-panel>2022-08-21</fecha-panel>
+</aeropuertos>

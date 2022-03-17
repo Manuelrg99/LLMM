@@ -1,70 +1,162 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-<xs:element name="ejercicioresumen">
-    <xs:complexType>
+    <xs:element name="resumenes">
+        <xs:complexType>
+            <xs:sequence>
+                <!--Definimos elementos-->
+                <xs:element name="simples">
+                    <xs:complexType>
+                        <!--Vamos a definir elementos simples-->
+                        <xs:all>
+                            <!--podemos cambiar el orden de secuencia establecido-->
+                            <xs:element name="SinAtributo" type="xs:string"/>
+                            <!-- Tipo simple= integer, date, string, etc-->
+                            <xs:element name="integer" type="xs:integer"/>
+                            <xs:element name="string" type="xs:string"/>
+                            <xs:element name="date" type="xs:date"/>
+                            <!-- Tipo simple= integer, date, string, etc-->
+                            <xs:element name="elementoDefinido" type="elemenDefinido"/>
+                            <!--Nos dirigmos al final del documento-->
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+                <!--Vamos a definir elementos complejos-->
+                <xs:element name="ConjuntosComplejos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!--Elemnto complejo sin atributo-->
+                            <xs:element name="elemento1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="elemento1.1" type="xs:string"/>
+                                        <xs:element name="elemento1.2" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <!--Elemnto complejo con atributo-->
+                            <xs:element name="elemento2">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="elemento2.1" type="xs:string"/>
+                                        <xs:element name="elemento2.2" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <!--Elemento complejo sin atributo con tipo definido en el elemento simple (se comporta como un cmplextype pero es reutilizable)-->
+                            <xs:element name="elemento3">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <!--Elemnto simple sin atributo Tipo  definido-->
+                                        <xs:element name="elemento1.1" type="elemento1.1.1"/>
+                                        <xs:element name="elemento1.2" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <!--Restricciones--><!--Expresiones Regulares Numericas--><!--Patrón para un número de teléfono como el siguiente +34 677 121 212-->
+                            <xs:element name="telefono">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[+][0-9]{11}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <!--Expresiones Regulares de Cadenas-->
+                            <!--Patron para coincidencia con la palabra "viagra" y con algunas de las alteraciones que utilizan 
+                    los emisores de spam, por ejemplo: vi@gra v1agra v1@gra v!@gr@ -->
+                            <xs:element name="pastilla">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="viagra|vi@gra|v1agra|v1@gra|v!@gr@"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <!--Expresiones Regulares Mixtas-->
+                            <!--Patrón para correo electrónico por ejemplo: pepe87@gmail.com -->
+                            <xs:element name="email">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[_]*[a-z0-9]{6,50}[@][a-z]{1,10}[.][a-z]{2,6}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <!--All/Choice /sequence--><!--Secuence obliga a respetar el orden en el que esta en el xsd-->
+                            <xs:element name="tarjetas1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="color1" type="xs:string"/>
+                                        <xs:element name="color2" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <!--Choice obliga a tener al menos una de las opciones que esta en el xsd-->
+                            <xs:element name="tarjetas2">
+                                <xs:complexType>
+                                    <xs:choice>
+                                        <xs:element name="color1" type="xs:string"/>
+                                        <xs:element name="color2" type="xs:string"/>
+                                    </xs:choice>
+                                </xs:complexType>
+                            </xs:element>
+                            <!--All obliga a que aparezcan todas las opciones pero en el orden que queramos que esta en el xsd-->
+                            <xs:element name="tarjetas3">
+                                <xs:complexType>
+                                    <xs:all>
+                                        <xs:element name="color1" type="xs:string"/>
+                                        <xs:element name="color2" type="xs:string"/>
+                                    </xs:all>
+                                </xs:complexType>
+                            </xs:element>
+                            <!--max-minoccurs en elemento simple -->
+                            <xs:element name="tema" type="xs:integer" minOccurs="0" maxOccurs="unbounded"/>
+                            <xs:element name="curso" minOccurs="1" maxOccurs="10">
+                                <xs:complexType>
+                                    <xs:sequence minOccurs="1" maxOccurs="10">
+                                        <xs:element name="puesto" type="xs:integer" minOccurs="1" maxOccurs="10"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <!--Grupos de elementos para reutilizar-->
+                            <xs:element name="alumno">
+                                <xs:complexType>
+                                    <xs:group ref="persona"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="profesor">
+                                <xs:complexType>
+                                    <xs:group ref="persona"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!--########--><!--Definicion del atributo definido simple-->
+    <xs:simpleType name="elemenDefinido">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="tonteria"/>
+            <xs:enumeration value="maldito"/>
+            <xs:enumeration value="caray"/>
+            <xs:enumeration value="caramba"/>
+            <xs:enumeration value="madre"/>
+            <xs:enumeration value="mia"/>
+            <xs:enumeration value="ostras"/>
+        </xs:restriction>
+    </xs:simpleType><!--Definicion del atributo definido complejo-->
+    <xs:complexType name="elemento1.1.1">
         <xs:sequence>
-            <!-- Definimos elementos simples -->
-            <xs:element name="ConjuntosSimples">
-                <xs:complexType>
-                    <!-- Vamos a definir elementos simples -->
-                    <xs:all>
-                        <xs:element name="SinAtributo" type="xs:string"/>
-                        <!-- Tipo simple: integer, string, date, etc -->
-                        <xs:element name="SinAtributoTipoSimple" type="xs:date"/>
-                        <xs:element name="SinAtributoTipoDefinido" type="xs:string"/>
-
-                        <xs:element name="ConAtributo">
-                        
-                        </xs:element>
-                    </xs:all>   
-                   
-                </xs:complexType>
-            </xs:element>
-            <!-- Definimos elementos complejos-->
-            <xs:element name="ConjuntosComplejos">
-                <xs:complexType>
-                    <!-- Vamos a definir elementos complejos -->
-                    <xs:all>
-                        <!-- Sin atributos con tipos base -->
-                        <xs:element name="Elemento1">
-                            <xs:complexType>
-                                <xs:sequence>
-                                    <xs:element name="subElemento1" type="xs:string"/>
-                                    <xs:element name="subElemento2" type="xs:integer"/>
-                                </xs:sequence>
-                            </xs:complexType>
-                        </xs:element>
-                        <!-- Elemento complejo con atributo -->
-                        <xs:element name="Elemento2">
-                            <xs:complexType>
-                                <xs:sequence>
-                                    <xs:element name="subElemento1" type="xs:string"/>
-                                    <xs:element name="subElemento2" type="xs:integer"/>
-                                </xs:sequence>
-                                <xs:attribute name="id" type="xs:integer"/>
-                            </xs:complexType>
-                        </xs:element>
-                    </xs:all>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="Restricciones">
-                <xs:complexType>
-                    <!-- Vamos a definir elementos complejos -->
-
-                </xs:complexType>
-            </xs:element>
+            <xs:element name="loclaidad" type="xs:string"/>
+            <xs:element name="cp" type="xs:string"/><!--apunta el elemento defindo antrerior-->
+            <xs:element name="ciudad" type="elemenDefinido"/>
         </xs:sequence>
-    </xs:complexType>
-</xs:element>
-<!-- Definición de tipos -->
-    <!-- Tipo "Dirección"-->
+    </xs:complexType><!--Definicion de grupo-->
+    <xs:group name="persona">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="apellidos" type="xs:string"/>
+            <xs:element name="direccion" type="xs:string"/>
+        </xs:sequence>
+    </xs:group>
 </xs:schema>
-<!-- Restricciones -->
-<!-- Expresiones regulares -->
-<!-- 1.- Numérica -->
-<!-- 2.- De cadenas -->
-<!-- 3.- Mixtas -->
-<!-- All/Choice/Sequence -->
-<!-- max-minOccurs -->
-<!-- Grupos de elementos para reutilizar -->
