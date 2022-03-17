@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE Farmacia SYSTEM "medicamento.dtd">
+<Farmacia>
+    <medicamento>
+        
+        <Nombre id="1">
+            <Generico></Generico>
+            <Comercial></Comercial>
+        </Nombre>
+
+        <Administracion tipo="Intramuscular"></Administracion>
+        <Dosis></Dosis>
+    </medicamento>
+    <medicamento>
+        
+        <Nombre id="2">
+            <Generico>Raúl</Generico>
+            <Comercial>Recordatorio</Comercial>
+        </Nombre>
+
+        <Administracion tipo="Oral"></Administracion>
+        <Dosis></Dosis>
+    </medicamento>
+</Farmacia>
