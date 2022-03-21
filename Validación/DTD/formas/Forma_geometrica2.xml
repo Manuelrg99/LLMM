@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Formas [
+   <!ELEMENT Formas (Forma_geometrica+)>
+   <!ELEMENT Forma_geometrica ((triangulo | cuadrado | rombo | circulo | otra), caracteristicas)>
+      <!ELEMENT triangulo (#PCDATA)>
+      <!ELEMENT rombo (#PCDATA)>
+      <!ELEMENT circulo (#PCDATA)>
+      <!ELEMENT cuadrado (#PCDATA)>
+      <!ELEMENT otra (#PCDATA)>
+
+      <!ELEMENT caracteristicas (color, tipo)>
+         <!ELEMENT color (#PCDATA)>
+         <!ELEMENT tipo (#PCDATA)>
+      <!ATTLIST cuadrado lados CDATA #IMPLIED>
+      <!ATTLIST triangulo lados CDATA #IMPLIED>
+      <!ATTLIST rombo lados CDATA #IMPLIED>
+      <!ATTLIST otra lados CDATA #IMPLIED>
+]>
+<Formas>
+<Forma_geometrica>
+   <triangulo lados="3">rombo</triangulo>
+   <caracteristicas>
+      <color>naranja</color>
+      <tipo>plana</tipo>
+   </caracteristicas>
+</Forma_geometrica>
+<Forma_geometrica>
+   <rombo lados="4">rombo</rombo>
+   <caracteristicas>
+      <color>naranja</color>
+      <tipo>plana</tipo>
+   </caracteristicas>
+</Forma_geometrica>
+<Forma_geometrica>
+   <cuadrado lados="4"></cuadrado>
+   <caracteristicas>
+      <color>naranja</color>
+      <tipo>plana</tipo>
+   </caracteristicas>
+</Forma_geometrica>
+<Forma_geometrica>
+   <otra lados="4"></otra>
+   <caracteristicas>
+      <color>naranja</color>
+      <tipo>plana</tipo>
+   </caracteristicas>
+</Forma_geometrica>
+</Formas>

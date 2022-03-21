@@ -1,0 +1,8 @@
+<Forma_geometrica>
+   <nombre>rombo</nombre>
+   <caracteristicas>
+      <color>naranja</color>
+      <tipo>plana</tipo>
+   </caracteristicas>
+   <numero_de_lados>4</numero_de_lados>
+</Forma_geometrica>
